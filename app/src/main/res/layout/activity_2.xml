@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            android:paddingTop="24dp"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noi_dung"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_Infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:hint="@string/nhap_noidung" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/so_tien"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_Money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:hint="@string/nhap_sotien" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hinh_thuc"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rbtnGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtn_Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/thu" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_Mois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:checked="false"
+                    android:text="@string/chi" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="22dp"
+            android:gravity="top|center"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:id="@+id/btn_ReEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:background="#FF3030"
+                android:text="@string/nhap_lai" />
+
+            <Button
+                android:id="@+id/btn_Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#00008B"
+                android:text="@string/them"
+                android:textColor="#ffff" />
+
+            <Button
+                android:id="@+id/btn_Show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:background="#008B00"
+                android:text="@string/hien_thi" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
